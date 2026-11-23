@@ -12,7 +12,7 @@ export default function Footer() {
           </div>
           <div>
             <h2 className="footer-h">What We Do</h2>
-            <ul>{services.items.map((s) => <li key={s.title}><a href="#services">{s.title}</a></li>)}</ul>
+            <ul>{services.items.map((s) => <li key={s.title}><a href="/#services">{s.title}</a></li>)}</ul>
           </div>
           <div>
             <h2 className="footer-h">Social</h2>
@@ -31,7 +31,10 @@ export default function Footer() {
         <p className="footer-word" aria-hidden="true">Seyi Israel</p>
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} {site.name}. Registered in England and Wales.</span>
-          <a href="#top">Back to top ↑</a>
+          <span className="footer-legal">
+            <a href="/privacy">Privacy Notice</a>
+            <a href="#">Back to top ↑</a>
+          </span>
         </div>
       </div>
     </footer>

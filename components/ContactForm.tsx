@@ -119,6 +119,9 @@ export default function ContactForm() {
       <button className="form-submit" type="submit" disabled={status === "sending"}>
         {status === "sending" ? "Sending…" : status === "error" ? "Try again" : f.button} <span aria-hidden="true">→</span>
       </button>
+      <p className="form-privacy">
+        {f.privacyNote} Read our <a href="/privacy">Privacy Notice</a>.
+      </p>
       {status === "error" && serverMessage && (
         <p className="form-error" role="alert">{serverMessage}</p>
       )}

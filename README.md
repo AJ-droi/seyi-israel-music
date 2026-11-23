@@ -13,6 +13,7 @@ npm run dev      # open http://localhost:3000
 ## Page
 A single landing page at `/`, built from the company profile in `copy.md`:
 Hero, Who We Are, What We Do (5 areas), Vision, Our Mission, Our Values, Governance, Work With Us (contact form), Footer.
+Plus a Privacy Notice page at `/privacy`, linked from the footer and under the contact form.
 The layout and style follow the Echoa Webflow template (Inter Tight, black/white, one accent colour,
 oversized display type, live city clock in the nav, "Work With Us" marquee card).
 
@@ -41,6 +42,10 @@ copy.md             The client's copy as supplied
 - **Social/streaming links:** `site.socials` in `content/site.ts`. The footer shows a placeholder until at least one is set.
 - **Contact form:** set the Resend variables below.
 - **Open Graph image:** add `public/og.png` (1200×630) in `app/layout.tsx`.
+- **Privacy Notice** (`/privacy`, text in `content/privacy.ts`): fill the `[square-bracket]` items (company number,
+  website host, email provider, how long enquiries are kept) and have the client check it. The client should also
+  check whether they must pay the ICO data protection fee (ico.org.uk/fee). If analytics, a newsletter or payments
+  are added later, update the notice (and add a cookie banner if the analytics need consent).
 - Not in the copy, so not on the page: releases/streaming player, upcoming events, testimonials. Add them when the client supplies them.
 
 ## Contact form — turn on email delivery

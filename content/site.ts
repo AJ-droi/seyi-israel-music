@@ -25,10 +25,10 @@ export const site = {
 };
 
 export const nav = [
-  { label: "About", href: "#about" },
-  { label: "What We Do", href: "#services" },
-  { label: "Mission", href: "#mission" },
-  { label: "Values", href: "#values" },
+  { label: "About", href: "/#about" },
+  { label: "What We Do", href: "/#services" },
+  { label: "Mission", href: "/#mission" },
+  { label: "Values", href: "/#values" },
 ];
 
 export const hero = {
@@ -169,6 +169,8 @@ export const contact = {
     to: "", // TODO: client's inbox, e.g. hello@seyiisraelmusic.com
     confirmation: "Thank you. Your message has been sent and we'll be in touch soon.",
     error: "Sorry, your message couldn't be sent right now. Please try again shortly.",
+    // Shown under the submit button, followed by a link to /privacy
+    privacyNote: "We'll only use your details to reply to your message.",
     interests: [
       { value: "production", label: "Music production & distribution" },
       { value: "events", label: "Project management & live events" },
