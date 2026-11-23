@@ -1,0 +1,2 @@
+.fieldError { font-size: 13px; font-weight: 500; color: #ff8a7a; line-height: 1.4; }
+.invalid input, .invalid select, .invalid textarea { border-color: #ff6b57 !important; }
